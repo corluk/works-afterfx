@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html class=" js" prefix="og: http://ogp.me/ns#" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">.autocomplete-container {  overflow: visible;}.autocomplete-suggestions {  border: 1px solid #999;  background: #FFF;  overflow-x: hidden;  overflow-y: auto;  cursor: default;}.autocomplete-suggestion {  padding: 2px 5px;  white-space: nowrap;  overflow: hidden;}.autocomplete-selected {  background: #F0F0F0;}.autocomplete-container strong {  font-weight: bold;}#powered-by-constructor-io {  font-size: 0.8em;  text-align:right;  background-color:rgb(255,255,192);  font-family:sans-serif;  padding: 4px 10px;  position: absolute;  border: 1px solid #999;}#constructorio-backing-node {  background-color:rgb(255,255,255);  padding: 4px 10px;  position: absolute;  border: 1px solid #FFF;}.autocomplete-suggestion-image {  float:left;  padding-right: 10px;}#autocomplete-direct-results:before {  content:'Products'}#autocomplete-search-container:before {  content:'Search Suggestions'}.autocomplete-suggestion-description {  font-size: 0.8em;  display: block;  margin-left: 10px;  line-height: 1.0em;}</style>
+  <meta charset="utf-8">
+  <script src="after-effects_dosyalar/ba86f45fc4" type="text/javascript"></script><script src="after-effects_dosyalar/nr-971.js"></script><script src="after-effects_dosyalar/analytics.js" async=""></script><script nonce="f00eecdd1077098aecce20962d8b098ea271515cdfd03728275fc695ed0f4b2bfe4740ec004471c63662810f2983351ad8ab50c542cbb3ba83aebcfae9699b6c" type="text/javascript">window.NREUM||(NREUM={});NREUM.info = {"agent":"","beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"ba86f45fc4","applicationID":"9556514","applicationTime":154.328308,"transactionName":"M1BXZxFZVkQFURBdVwoafVITURdwIWZLG0gFVl5SBF0XTBRTB19ZA1BI","queueTime":0,"ttGuid":"bad679ee4218c0","agentToken":null}; window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var o=e[n]={exports:{}};t[n][0].call(o.exports,function(e){var o=t[n][1][e];return r(o||e)},o,o.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<n.length;o++)r(n[o]);return r}({1:[function(t,e,n){function r(){}function o(t,e,n){return function(){return i(t,[(new Date).getTime()].concat(u(arguments)),e?null:this,n),e?void 0:this}}var i=t("handle"),a=t(2),u=t(3),c=t("ee").get("tracer"),f=NREUM;"undefined"==typeof window.newrelic&&(newrelic=f);var s=["setPageViewName","setCustomAttribute","finished","addToTrace","inlineHit"],p="api-",l=p+"ixn-";a(s,function(t,e){f[e]=o(p+e,!0,"api")}),f.addPageAction=o(p+"addPageAction",!0),e.exports=newrelic,f.interaction=function(){return(new r).get()};var d=r.prototype={createTracer:function(t,e){var n={},r=this,o="function"==typeof e;return i(l+"tracer",[Date.now(),t,n],r),function(){if(c.emit((o?"":"no-")+"fn-start",[Date.now(),r,o],n),o)try{return e.apply(this,arguments)}finally{c.emit("fn-end",[Date.now()],n)}}}};a("setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){d[e]=o(l+e)}),newrelic.noticeError=function(t){"string"==typeof t&&(t=new Error(t)),i("err",[t,(new Date).getTime()])}},{}],2:[function(t,e,n){function r(t,e){var n=[],r="",i=0;for(r in t)o.call(t,r)&&(n[i]=e(r,t[r]),i+=1);return n}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],3:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,o=n-e||0,i=Array(o<0?0:o);++r<o;)i[r]=t[e+r];return i}e.exports=r},{}],ee:[function(t,e,n){function r(){}function o(t){function e(t){return t&&t instanceof r?t:t?u(t,a,i):i()}function n(n,r,o){t&&t(n,r,o);for(var i=e(o),a=l(n),u=a.length,c=0;c<u;c++)a[c].apply(i,r);var s=f[m[n]];return s&&s.push([w,n,r,i]),i}function p(t,e){g[t]=l(t).concat(e)}function l(t){return g[t]||[]}function d(t){return s[t]=s[t]||o(n)}function v(t,e){c(t,function(t,n){e=e||"feature",m[n]=e,e in f||(f[e]=[])})}var g={},m={},w={on:p,emit:n,get:d,listeners:l,context:e,buffer:v};return w}function i(){return new r}var a="nr@context",u=t("gos"),c=t(2),f={},s={},p=e.exports=o();p.backlog=f},{}],gos:[function(t,e,n){function r(t,e,n){if(o.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return t[e]=r,r}var o=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){o.buffer([t],r),o.emit(t,e,n)}var o=t("ee").get("handle");e.exports=r,r.ee=o},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,i,function(){return o++})}var o=1,i="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!h++){var t=y.info=NREUM.info,e=s.getElementsByTagName("script")[0];if(t&&t.licenseKey&&t.applicationID&&e){c(m,function(e,n){t[e]||(t[e]=n)});var n="https"===g.split(":")[0]||t.sslForHttp;y.proto=n?"https://":"http://",u("mark",["onload",a()],null,"api");var r=s.createElement("script");r.src=y.proto+t.agent,e.parentNode.insertBefore(r,e)}}}function o(){"complete"===s.readyState&&i()}function i(){u("mark",["domContent",a()],null,"api")}function a(){return(new Date).getTime()}var u=t("handle"),c=t(2),f=window,s=f.document,p="addEventListener",l="attachEvent",d=f.XMLHttpRequest,v=d&&d.prototype;NREUM.o={ST:setTimeout,CT:clearTimeout,XHR:d,REQ:f.Request,EV:f.Event,PR:f.Promise,MO:f.MutationObserver},t(1);var g=""+location,m={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-971.min.js"},w=d&&v&&v[p]&&!/CriOS/.test(navigator.userAgent),y=e.exports={offset:a(),origin:g,features:{},xhrWrappable:w};s[p]?(s[p]("DOMContentLoaded",i,!1),f[p]("load",r,!1)):(s[l]("onreadystatechange",o),f[l]("onload",r)),u("mark",["firstbyte",a()],null,"api");var h=0},{}]},{},["loader"]);</script>
+  <title>after-effects</title>
+
+    <meta name="description" content="Send instructions to the After Effects scripting environment from node.js.">
+    <meta property="og:description" content="Send instructions to the After Effects scripting environment from node.js.">
+    <meta property="og:title" content="after-effects">
+    <meta property="og:url" content="https://www.npmjs.com/package/after-effects">
+    <meta property="og:site_name" content="npm">
+    <meta name="keywords" content="effects,after">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:url" content="https://www.npmjs.com/package/after-effects">
+    <meta name="twitter:title" content="npm: after-effects">
+    <meta name="twitter:description" content="Send instructions to the After Effects scripting environment from node.js.">
+  
+  
+  <meta http-equiv="cleartype" content="on">
+  
+  <meta name="apple-mobile-web-app-capable" content="no">
+  
+  
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,initial-scale=1,user-scalable=yes">
+  
+  <meta name="x-npm:ga:id" content="UA-47041310-1">
+  <meta name="x-npm:ga:dimensions" content="{&quot;'aboveChrome&quot;:&quot;dimension1&quot;,&quot;belowHeader&quot;:&quot;dimension3&quot;,&quot;packagePage&quot;:&quot;dimension2'&quot;}">
+  
+  <link rel="canonical" href="https://www.npmjs.com/package/after-effects">
+  <link rel="search" type="application/opensearchdescription+xml" href="https://www.npmjs.com/opensearch.xml" title="npm">
+
+    <link rel="stylesheet" media="all" href="after-effects_dosyalar/index.css">
+
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+
+  <link rel="stylesheet" href="after-effects_dosyalar/css.css">
+  
+    <script src="after-effects_dosyalar/index.js"></script>
+  <link rel="apple-touch-icon" sizes="57x57" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-57x57.png">
+  <link rel="apple-touch-icon" sizes="60x60" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-60x60.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="76x76" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-76x76.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-114x114.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-120x120.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-144x144.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-icon-180x180.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1024x748.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-1536x2008.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: landscape) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-2048x1496.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-320x460.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 568px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x1096.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 320px) and (device-height: 480px) and (-webkit-device-pixel-ratio: 2)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-640x920.png">
+  <link rel="apple-touch-startup-image" media="(device-width: 768px) and (device-height: 1024px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 1)" href="https://www.npmjs.com/static/images/touch-icons/apple-touch-startup-image-768x1004.png">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-32x32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-230x230.png" sizes="230x230">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-96x96.png" sizes="96x96">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/android-chrome-192x192.png" sizes="192x192">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/coast-228x228.png" sizes="228x228">
+  <link rel="icon" type="image/png" href="https://www.npmjs.com/static/images/touch-icons/favicon-16x16.png" sizes="16x16">
+  <link rel="manifest" href="https://www.npmjs.com/static/images/touch-icons/manifest.json">
+  <link rel="shortcut icon" href="https://www.npmjs.com/static/images/touch-icons/favicon.ico">
+  <link rel="yandex-tableau-widget" href="https://www.npmjs.com/static/images/touch-icons/yandex-browser-manifest.json">
+  <meta property="og:image" content="https://www.npmjs.com/static/images/touch-icons/open-graph.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="msapplication-TileColor" content="#cb3837">
+  <meta name="msapplication-TileImage" content="/static/images/touch-icons/mstile-144x144.png">
+  <meta name="msapplication-config" content="/static/images/touch-icons/browserconfig.xml">
+  <meta name="theme-color" content="#cb3837">
+
+<style>.autocomplete-container, .autocomplete-suggestions, #powered-by-constructor-io { width: 482px !important }</style><style type="text/css" id="iconic-responsive-css">/* Iconic Responsive Support Styles */
+.iconic-property-fill, .iconic-property-text {stroke: none !important;}
+.iconic-property-stroke {fill: none !important;}
+svg.iconic.iconic-fluid {height:100% !important;width:100% !important;}
+svg.iconic.iconic-sm:not(.iconic-size-md):not(.iconic-size-lg), svg.iconic.iconic-size-sm{width:16px;height:16px;}
+svg.iconic.iconic-md:not(.iconic-size-sm):not(.iconic-size-lg), svg.iconic.iconic-size-md{width:32px;height:32px;}
+svg.iconic.iconic-lg:not(.iconic-size-sm):not(.iconic-size-md), svg.iconic.iconic-size-lg{width:128px;height:128px;}
+svg.iconic-sm > g.iconic-md, svg.iconic-sm > g.iconic-lg, svg.iconic-md > g.iconic-sm, svg.iconic-md > g.iconic-lg, svg.iconic-lg > g.iconic-sm, svg.iconic-lg > g.iconic-md {display: none;}
+svg.iconic.iconic-icon-sm > g.iconic-lg, svg.iconic.iconic-icon-md > g.iconic-lg {display:none;}
+svg.iconic-sm:not(.iconic-icon-md):not(.iconic-icon-lg) > g.iconic-sm, svg.iconic-md.iconic-icon-sm > g.iconic-sm, svg.iconic-lg.iconic-icon-sm > g.iconic-sm {display:inline;}
+svg.iconic-md:not(.iconic-icon-sm):not(.iconic-icon-lg) > g.iconic-md, svg.iconic-sm.iconic-icon-md > g.iconic-md, svg.iconic-lg.iconic-icon-md > g.iconic-md {display:inline;}
+svg.iconic-lg:not(.iconic-icon-sm):not(.iconic-icon-md) > g.iconic-lg, svg.iconic-sm.iconic-icon-lg > g.iconic-lg, svg.iconic-md.iconic-icon-lg > g.iconic-lg {display:inline;}</style></head>
+
+<body itemscope="" itemtype="http://schema.org/WebSite" data-crumb="NFYkY3UfObtGGamX6GS1AdbxznEmS6yCJgA21-aDEuI">
+  <meta itemprop="url" content="https://www.npmjs.com/">
+
+
+  <header class="anonymous   ">
+  <!-- logo -->
+  <div class="header-item brand-container">
+    <div class="logo-container" id="npm-logo">
+      <a href="https://www.npmjs.com/"><svg viewBox="0 0 18 7">
+	<path fill="#CB3837" d="M0,0v6h5v1h4v-1h9v-6"></path>
+	<path fill="#FFF" d="M1,1v4h2v-3h1v3h1v-4h1v5h2v-4h1v2h-1v1h2v-4h1v4h2v-3h1v3h1v-3h1v3h1v-4"></path>
+</svg></a>
+    </div>
+  </div>
+  <!-- /logo -->
+
+  <!-- search -->
+  <div class="header-item header-search-container">
+    <form class="site-search" id="npm-search" action="/search" method="get" itemprop="potentialAction" itemscope="" itemtype="http://schema.org/SearchAction">
+      <meta itemprop="target" content="https://www.npmjs.com/search?q={q}">
+      <div id="site-search-container">
+          <input autocomplete="off" name="q" id="site-search" placeholder="find packages" tabindex="1" autocorrect="off" autocapitalize="off" itemprop="query-input" type="search">
+      </div>
+      <button tabindex="2" type="submit">
+        <span class="a11y-only">Search</span>
+        <svg viewBox="0 0 34 34" fill="none" stroke="currentColor">
+    <ellipse stroke-width="3" cx="16" cy="15" rx="12" ry="12"></ellipse>
+    <path d="M26 26 l 8 8" stroke-width="3" stroke-linecap="square"></path>
+</svg>
+      </button>
+    </form>
+  </div>
+
+
+  <!-- menu 1 -->
+  <div class="header-item user-info-container">
+    <div class="user-info">
+        <ul class="user-info-salutation single">
+          <li><a href="https://www.npmjs.com/signup">sign up</a> or <a href="https://www.npmjs.com/login">log in</a></li>
+          <li><a href="https://www.npmjs.com/login"><span class="a11y-only">log in</span><svg viewBox="-2765 2857 1080 1080">
+  <path fill="#986844" d="M-1811.2 3598.5c-.1-4.3-.3-11.3-.8-20.3-.9-15.8-2.7-40.9-6.6-70.7-6.9-52.6-21.6-130.1-52.6-200.4-22.3-50.4-53.5-97.1-90.3-135.2-4.4-20.5-16.7-66.5-43.5-104.8l-5-7.2-54 35.5c-44.5-22.4-91-33.7-138.6-33.7-47.5 0-94.1 11.3-138.6 33.7l-54-35.5-5 7.2c-26.8 38.3-39 84.3-43.5 104.8-36.8 38.1-68 84.8-90.3 135.3-31.1 70.3-45.8 147.8-52.6 200.4-6.1 46.6-7.2 81.6-7.5 93.8 16.6 14 31.3 29.8 46.9 45 17.2 16.7 39.4 28.2 59.1 41.6 1.7 1.1 3.1 2.6 4.2 4.1 15.7 10.4 31 15.4 50.2 19.5 19.2 4.1 35.6 5.6 55.6 7.3 38.7 3.2 77 7.7 115.5 12.6 43.1 5.4 86.5 11.5 130 13.1 41.6 1.5 81.8-9 121.8-19.3 8.9-2.3 17.9-4.5 26.8-6.8.6-4.2 3-8.1 6.7-10.4 40.1-25 81.2-48.2 122-72 5.9-3.5 13.7-1.9 17.9 3.3 9-8.9 17.1-18.2 24.3-27.9l.2-.2.2-.2c1.7-2.6 1.8-2.7 1.5-12.6z"></path>
+  <path fill="#FFF" d="M-1808.7 3494.8c-6.9-53.2-21.8-131.7-53.4-203.2-22.3-50.5-53.5-97.5-90.3-136.1-5.5-24.4-18.2-68.2-44.5-105.7l-10.6-15.1-57.3 37.7c-44.3-21.4-90.6-32.2-137.9-32.2-47.2 0-93.6 10.8-137.9 32.2l-57.3-37.7-10.6 15.1c-26.2 37.5-39 81.2-44.5 105.7-36.7 38.5-67.9 85.5-90.3 136.1-31.6 71.4-46.5 149.9-53.4 203.2-7.5 57.7-7.6 98-7.6 99.7v6.3l3.8 5.1c26 35 62.9 64.7 109.6 88.3 36.9 18.6 80 33.6 128.3 44.4 82.2 18.5 151.8 19 159.5 19h.6c7.7 0 77.3-.5 159.5-19 48.3-10.8 91.4-25.8 128.3-44.4 46.7-23.6 83.6-53.3 109.6-88.3l3.7-5v-6.3c.4-1.8.2-42.3-7.3-99.8zm-118.3 174.3c-34.8 17.6-75.8 31.8-121.8 42.1-80.7 18.1-150.4 18.3-153.4 18.3h-.6c-2.9 0-72.7-.2-153.4-18.3-46-10.3-87-24.5-121.8-42.1-41.7-21.1-74.7-47.2-98-77.6.4-22.5 5.1-167.5 58.6-288.5 21.8-49.3 52.4-94.9 88.5-131.8l1.8-1.9.5-2.6c2.7-13.1 12.9-56.4 36.3-93.4l37.2 24.5-7.3 16.6 22.8-11.9c43.3-22.6 88.7-34.1 135-34.1s91.7 11.5 135 34.1l22.8 11.9-7.3-16.6 37.2-24.5c23.4 37 33.6 80.4 36.3 93.4l.5 2.6 1.8 1.9c36.1 36.9 66.7 82.5 88.5 131.8 53.5 121 58.2 266.1 58.6 288.5-23.2 30.4-56.1 56.5-97.8 77.6zm-163-13c0 30.1-50.4 54.4-112.5 54.4s-112.5-24.4-112.5-54.4c0-30.1 50.4-54.4 112.5-54.4s112.5 24.3 112.5 54.4zm-223.5-65.3c0 12.3-10 22.3-22.3 22.3s-22.3-10-22.3-22.3 10-22.3 22.3-22.3c12.3-.1 22.3 9.9 22.3 22.3zm267.8 0c0 12.3-10 22.3-22.3 22.3s-22.3-10-22.3-22.3 10-22.3 22.3-22.3c12.3-.1 22.3 9.9 22.3 22.3z"></path>
+</svg></a></li>
+        </ul>
+    </div> <!-- .user-info -->
+  </div>
+  <!-- /menu 1 -->
+
+  <!-- menu 2 -->
+  <div class="header-item header-nav-menu-container">
+    <a href="#" id="npm-expansions" class="npm-expansions" data-event-trigger="click" data-event-name="npm-expansions">Newtonian Particle Motion</a>
+
+    <div class="nav-menu-container" role="navigation">
+      <a class="nav-toggle drop-down-menu-toggle" href="#product-navigation"><span class="a11y-only">Toggle Navigation</span>
+        <svg viewBox="0 0 44 44">
+    <rect x="4" y="12" fill="currentColor" width="36" height="2"></rect>
+    <rect x="4" y="20" fill="currentColor" width="36" height="2"></rect>
+    <rect x="4" y="28" fill="currentColor" width="36" height="2"></rect>
+</svg>
+      </a>
+
+
+      <div class="drop-down-menu-container" role="menu">
+        <nav id="product-navigation" class="product-navigation drop-down-menu">
+          <ul class="drop-down-menu-section products-list">
+            <li><a id="nav-enterprise-link" href="https://www.npmjs.com/npm/enterprise">npm Enterprise</a></li>
+            <li><a id="nav-features-link" href="https://www.npmjs.com/features" data-event-trigger="click" data-event-name="features-nav-link">features</a></li>
+            <li><a id="nav-pricing-link" href="https://www.npmjs.com/pricing">pricing</a></li>
+            <li><a id="nav-docs-link" href="https://docs.npmjs.com/">documentation</a></li>
+            <li><a id="nav-support-link" href="https://www.npmjs.com/support">support</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+  <!-- /menu 2 -->
+
+
+
+</header>
+
+
+
+
+    <div class="container content">
+      
+<div class="content-column">
+
+  <h1 class="package-name">
+    <a class="active" href="https://www.npmjs.com/package/after-effects">after-effects</a>
+      <i class="icon-public"></i>
+  </h1>
+  <p class="package-description">Send instructions to the After Effects scripting environment from node.js.</p>
+
+  <form class="star">
+    <input name="name" value="after-effects" type="hidden">
+    <input id="star-input" name="isStarred" value="true" type="checkbox">
+    <label for="star-input" class="icon-star"></label>
+      <input name="crumb" value="NFYkY3UfObtGGamX6GS1AdbxznEmS6yCJgA21-aDEuI" type="hidden">
+  </form>
+
+  <div id="readme" class="markdown">
+      <h1 id="user-content-after-effects" class="deep-link package-name-redundant"><a href="#after-effects">after-effects</a></h1>
+<hr>
+<h2 id="user-content-why" class="deep-link"><a href="#why">Why?</a></h2>
+<ul>
+<li>
+<p>You're running a node.js server with After Effects installed, and you'd like to run render commands server-side.</p>
+</li>
+<li>
+<p>You use node.js locally, and prefer not to run AE scripts with the ExtendScript toolkit.</p>
+</li>
+<li>
+<p>You'd like to run and create AE scripts using ES6 syntax.</p>
+</li>
+<li>
+<p>Because it angers your religious mother, and you want to be rebellious.</p>
+</li>
+</ul>
+<h2 id="user-content-requirements" class="deep-link"><a href="#requirements">Requirements</a></h2>
+<p>Obviously, you need After Effects installed on your machine.
+Additionally, in your After Effects preferences, enable:</p>
+<p><em>Preferences -&gt; General -&gt; Allow Scripts to Write Files and Access Network</em></p>
+<hr>
+<h2 id="user-content-basic-usage" class="deep-link"><a href="#basic-usage">Basic Usage</a></h2>
+<pre><code>var ae = require("after-effects");
+</code></pre>
+<p><em>Ta Daaaa</em>. The rest of this readme assumes ae is the after effects module.</p>
+<p>To execute some code in After Effects:</p>
+<pre><code>ae(() =&gt; alert("Hello!\nFrom node.js"));
+</code></pre>
+<p><em>What fun!</em></p>
+<p>Provided that After Effects is installed in your Applications/Program
+ directory, and that you haven't renamed any of the folders or 
+something, this will work.</p>
+<hr>
+<h2 id="user-content-scripting-considerations" class="deep-link"><a href="#scripting-considerations">Scripting Considerations</a></h2>
+<p>The After Effects scripting environment is a completely different 
+engine than node.js. Node.js has no access to the After Effects 
+environment, and vice versa:</p>
+<pre><code>var foo = "bar";
+
+//this will not work:
+ae(() =&gt; alert(foo));
+</code></pre>
+<p>If you'd like to send data from node.js to After Effects, you have to supply it as an argument along with the execute command:</p>
+<pre><code>var foo = "bar";
+
+ae((foo_from_node) =&gt; alert(foo_from_node), foo);
+</code></pre>
+<p>What you're really doing when you use the execute method is 
+converting the supplied function to a string and then sending it to 
+After Effects to parse. As a result, whatever data you supply has to be 
+convertible to JSON.</p>
+<p>You can also retrieve data from After Effects with the same restriction:</p>
+<pre><code>var project_name = ae(() =&gt; {
+    if (app.project.file)
+        return app.project.file.name;
+    else
+        return "(project not yet saved)";
+});
+
+console.log(project_name);
+</code></pre>
+<p>Also see the <a href="http://blogs.adobe.com/aftereffects/files/2012/06/After-Effects-CS6-Scripting-Guide.pdf">After Effects Scripting Guide</a> for information about the After Effects Javascript API.</p>
+<hr>
+<h2 id="user-content-sync-vs-async" class="deep-link"><a href="#sync-vs-async">Sync vs Async</a></h2>
+<p>The default shortcut function will run the code synchronously and 
+block NodeJS until complete, however, you can also send code to After 
+Effects asynchronously:</p>
+<pre><code>//execute sends code to after effects, returning a Promise
+ae.execute(() =&gt; {
+  return app.project.activeItem.name;
+})
+.then(name =&gt; console.log(name))
+.catch(err =&gt; console.log('No Active Item'));
+</code></pre>
+<p>The default shortcut function actually is just a shortcut to ae.executeSync:</p>
+<pre><code>function save_current_project() {
+  app.project.save();
+}
+
+ae.executeSync(save_current_project);
+//is the same as
+ae(save_current_project);
+</code></pre>
+<hr>
+<h2 id="user-content-options" class="deep-link"><a href="#options">Options</a></h2>
+<p>The ae object has a couple of options:</p>
+<pre><code>ae.options.errorHandling = true;
+ae.options.minify = false;
+ae.options.program = null;
+ae.options.includes = [
+	'./node_modules/after-effects/lib/includes/console.js',
+	'./node_modules/after-effects/lib/includes/es5-shim.js',
+	'./node_modules/after-effects/lib/includes/get.js'
+]
+</code></pre>
+<p>This would be how you set defaults.</p>
+<h3 id="user-content-errorhandling" class="deep-link"><a href="#errorhandling">errorHandling</a></h3>
+<p>With errorHandling enabled, errors thrown in After Effects will be suppressed and returned in the promise result:</p>
+<pre><code>ae.options.errorHandling = true;
+
+ae.execute(() =&gt; throw new Error("FooBar got FooBarred all the way to FooBar."))
+.then(result =&gt; console.log(result)) // empty
+.catch(err =&gt; console.log(err)); // contains error
+</code></pre>
+<p>With errorHandling disabled, After Effects will create a popup and prevent further code execution until it is dealt with.</p>
+<h3 id="user-content-minify" class="deep-link"><a href="#minify">minify</a></h3>
+<p>If true, the code will be minified before being sent to After 
+Effects. This is disabled by default, which is different from previous 
+versions of this package. I feel there's little point in spending the 
+extra time to minify code that isn't going over a network. Still, you 
+can set minify to true if you're into that sort of thing.</p>
+<pre><code>ae.options.minify = true;
+</code></pre>
+<h3 id="user-content-program" class="deep-link"><a href="#program">program</a></h3>
+<p>By default, ae will look for an After Effects installation in your 
+platforms default application directory. If you've installed it 
+elsewhere, you'll have to set this to the custom app directory.</p>
+<pre><code>ae.options.program = path.join('OtherAppDirectory','Adobe After Effects 2015');
+</code></pre>
+<p>Also handy if you've installed multiple versions of After Effects on your machine, and you'd like to target a specific one.</p>
+<h3 id="user-content-includes" class="deep-link"><a href="#includes">includes</a></h3>
+<p>Includes is an array which will concatanate the code from other files into your command, for use inside After Effects.
+The defaults are as follows:</p>
+<h5 id="user-content-consolejs" class="deep-link"><a href="#consolejs"><em>console.js</em></a></h5>
+<p>Provides console.log to the After Effects namespace. 'console.log' 
+inside After Effects will return logs to the node.js console when 
+execution is complete, assuming you correctly have <em>Preferences -&gt; General -&gt; Allow Scripts to Write Files and Access Network</em> set inside After Effects.</p>
+<h5 id="user-content-es5-shimjs" class="deep-link"><a href="#es5-shimjs"><em>es5-shim.js</em></a></h5>
+<p>The javascript environment within After Effects is very dated, pre 
+ES5. With es5-shim included, methods and functions available in es5 will
+ be available.</p>
+<pre><code>ae.execute(() =&gt; {
+    [1,2,3,4].forEach(i =&gt; alert(i)); // wont throw an error
+});
+</code></pre>
+<p>Also notice that you can use ES6 syntax when executing code. It's parsed through <a href="https://www.npmjs.com/package/babel">babel</a> before being sent to After Effects.</p>
+<h5 id="user-content-getjs" class="deep-link"><a href="#getjs"><em>get.js</em></a></h5>
+<p>Provides a jQuery inspired selector object to work with items in After Effects inside of an object called 'get':</p>
+<pre><code>ae.execute(() =&gt; {
+    //finds every composition with 'final' in the name
+    //and alerts it
+    get.comps(/Final/)
+       .each(comp =&gt; alert(comp.name));
+});
+</code></pre>
+<p>See the API for the get object below.</p>
+<h3 id="user-content-include-considerations" class="deep-link"><a href="#include-considerations">Include Considerations</a></h3>
+<p>The default options exist in their current state to benefit 
+quickstarting. I just want to fire up atom and run an ae command without
+ thinking too much about it. That said, there are a couple of things you
+ can do to optimize it's usage.</p>
+<h4 id="user-content-persistent-environment" class="deep-link"><a href="#persistent-environment"><em>Persistent Environment</em></a></h4>
+<p>The scripting environment inside After Effects persists between executions, unless
+you manually reset it or restart After Effects.</p>
+<pre><code>ae(()=&gt; console.log('includes ran'));
+ae.options.includes = [];
+
+//Once you've run your includes,
+//you can disable them and still benefit from their usage in the namespace:
+ae(()=&gt; ["shim","still","exists"].forEach(str =&gt; alert(str)));
+</code></pre>
+<p>You have access to the After Effects global namespace, through $.global:</p>
+<pre><code>ae(() =&gt; $.global.whoKilledKenny = "you bastards");
+
+var who = ae(() =&gt; $.global.whoKilledKenny);
+console.log(who); //you bastards
+</code></pre>
+<h4 id="user-content-scripts-directory" class="deep-link"><a href="#scripts-directory"><em>Scripts directory</em></a></h4>
+<p>There is a convenience method to get the scripts directory associated with the current After Effects install:</p>
+<pre><code>console.log(ae.scriptsDir);
+</code></pre>
+<p>This will throw an error if After Effects can't be found. This is 
+useful if you want to include any scripts in the Scripts Directory that 
+might exist.</p>
+<h4 id="user-content-startup-folder" class="deep-link"><a href="#startup-folder"><em>Startup Folder</em></a></h4>
+<p>Alternatively, You can copy the scripts provided in the lib folder to
+ the After Scripts/Startup folder inside your After Effects 
+installation. Then will be run and added to the global namespace when 
+After Effects is starting, and will not have to be included while 
+executing commands from ae.</p>
+<h4 id="user-content-jsx-vs-js" class="deep-link"><a href="#jsx-vs-js"><em>.jsx vs .js</em></a></h4>
+<p>If you just installed After Effects, you'll notice that all of the 
+files in the Scripts Directory end in .jsx
+If you're familiar with React, you're probably wondering what the hell 
+they're doing there. Well, long before Facebooks React, Adobe's primary 
+javascript format was .jsx. This is because the Adobe javascript Engine 
+has an xml literal built into it:</p>
+<pre><code>var xml = &lt;foo&gt;&lt;bar/&gt;&lt;/foo&gt;
+</code></pre>
+<p>We can't take advantage of that xml literal inside nodejs because 
+babel doesn't have a preset for it. As a result, if you try to include a
+ .jsx file, ae will assume it's written in Adobe Javascript. ae will not
+ babelify or minify it, otherwise it will could cause errors if the XML 
+literal was used.</p>
+<hr>
+<h2 id="user-content-advanced-usage" class="deep-link"><a href="#advanced-usage">Advanced Usage</a></h2>
+<p>If you're going to execute a particular method frequently, you can 
+precompile it as a command, which will prevent it from having to be 
+babelified or minified again:</p>
+<pre><code>var create_composition = new ae.Command(name =&gt; {
+  name = typeof name === "string" ? name : "New Comp";
+  app.project.items.addComp(name, 1920, 1080, 1, 24, 10);
+});
+</code></pre>
+<p>Commands, once made, can be executed with different arguments:</p>
+<pre><code>ae(create_composition, "First Comp");
+//or
+ae.execute(create_composition, "Super Comp");
+//or
+create_composition.executeSync("Oh we got ourselves a badass here");
+//you get the idea
+create_composition.execute("Breast Milk");
+</code></pre>
+<p>Commands have their own set of options. By default, they are the same as the options set on ae.options:</p>
+<pre><code>ae.options.minify = true;
+var getNumItems = new ae.Command(() =&gt; app.project.numItems); //will minify
+</code></pre>
+<p>Command options cannot be changed:</p>
+<pre><code>ae.options.errorHandling = false;
+var breakForFun = new ae.Command(() =&gt; throw("This is MY house."));
+
+ae.options.errorHandling = true;
+breakForFun.executeSync(); // will still alert inside in AE
+breakForFun.errorHandling = true; //throws error
+</code></pre>
+<p>You can create commands with their own options:</p>
+<pre><code>var getProjectName = new ae.Command(()=&gt; app.project.file.name, { includes: null, minify: true });
+</code></pre>
+<hr>
+<h2 id="user-content-creating-scripts" class="deep-link"><a href="#creating-scripts">Creating Scripts</a></h2>
+<p>Rather than executing code, you can create scripts for use in After Effects:</p>
+<pre><code> ae.create(() =&gt; {
+
+    let say_name =  item =&gt; alert(item.name);
+    say_name(app.project.activeItem);
+
+ }, "SayName.jsx");
+</code></pre>
+<p>This script will be available for After Effects to use in it's 
+scripts folder. The filename provided will be treated as a relative URI,
+ so if you want to create a script in the Scripts/Startup folder:</p>
+<pre><code> ae.create(() =&gt; {
+
+   alert("After Effects totally just started.");
+
+ }, "Startup/SayHello.jsx");
+</code></pre>
+<p>If you'd like to place scripts somewhere other than the scripts folder, you can pass an absolute path:</p>
+<pre><code> ae.create(() =&gt; {
+    app.project.activeItem.remove();
+ }, path.join(__dirname, "Created Scripts", "DeleteActiveItem.jsx"));
+</code></pre>
+<p>You can also create a script out of a command, with baked arguments:</p>
+<pre><code>var renameActiveItem = new ae.Command( name =&gt; app.project.activeItem.name = name);
+ae.create(renameActiveItem, "RenameActiveItemLarry.jsx", "Larry");
+</code></pre>
+<p>If you don't provide a filetype exention scripts will be created as 
+.jsx by default. After Effects doesn't care what the filetype extension 
+is, but you might as well leave it as .jsx by convention.</p>
+<p>You can also create scripts syncronously with ae.createSync();</p>
+<hr>
+<h2 id="user-content-get-api" class="deep-link"><a href="#get-api">'get' API</a></h2>
+<p>The <strong>get</strong> method (if enabled) is a jQuery inspired selector object to work with items in After Effects.</p>
+<p>It parses arguments of various types into three kinds of information in order to make selections.</p>
+<h3 id="user-content-argument-types" class="deep-link"><a href="#argument-types">Argument Types</a></h3>
+<h4 id="user-content-type" class="deep-link"><a href="#type">Type</a></h4>
+<p>Quite simply, type arguments narrow down what types of objects can be
+ selected. Constructors for Compositions, Folder, Layers or Properties 
+can be passed in as types.</p>
+<h4 id="user-content-context" class="deep-link"><a href="#context">Context</a></h4>
+<p>Context arguments provide the scope of objects to select from. 
+ItemCollections, LayerCollections, QueryResults or Arrays of instances 
+of each can be passed in as contexts.</p>
+<h4 id="user-content-selector" class="deep-link"><a href="#selector">Selector</a></h4>
+<p>Selector arguments fine tune what the results of a selection. 
+Strings, Regular Expressions, Numbers or Functions can be passed as 
+selectors.</p>
+<h3 id="user-content-making-selections" class="deep-link"><a href="#making-selections">Making Selections</a></h3>
+<p>These arguments can be passed in any order, and you can supply any number of them. Or none at all:</p>
+<pre><code>//selects every single item, layer and
+//and property in the current project.
+var everything = get();
+</code></pre>
+<p>To select every object of a specific type, throw in a type argument.</p>
+<pre><code>//CompItem is the constructor for composition objects.
+var allComps = get(CompItem);
+</code></pre>
+<p>Adding a selector argument allows you to fine tune the selection even further:</p>
+<pre><code>//String selectors match item names
+var mainComp = get(CompItem, "Main");
+
+//Regular expressions also work on names
+var allCopies = get(FootageItem, /Copy$/);
+
+//Number selectors match item labels
+var pinkLayers = get(AVLayer, 4);
+</code></pre>
+<p>Adding a context argument allows you to narrow the scope of your selection:</p>
+<pre><code>var solidsFolderContents = get(FootageItem, "Solids").children();
+var redLabelledItems = get(1, solidsFolderContents);
+</code></pre>
+<p>Collections can also be used as contexts:</p>
+<pre><code>var activeComp = app.project.activeItem;
+var activeCompLayers = get(AVLayer, activeComp.layers);
+</code></pre>
+<p>As you've seen, not providing a type will result in EVERY type of 
+object being selected. If you only want a couple of types, you can 
+provide mulitple type arguments:</p>
+<pre><code>var allVectorLayers = get(TextLayer, ShapeLayer);
+var allItems = get(CompItem, FolderItem, FootageItem);
+</code></pre>
+<p>Providing multiple types can get wordy. You can provide arrays of pre-arranged type definitions:</p>
+<pre><code>var allLayerTypes = [CameraLayer, LightLayer, TextLayer, AVLayer, ShapeLayer];
+var allLayers = get(allLayerTypes);
+var allRedLayers = get(1, allLayers);
+</code></pre>
+<p>Or you can use shortcuts on the get object;</p>
+<pre><code>var allRedLayers = get.layers(1);
+var itemsNamedFinal = get.items("Final");
+var compsNamedMain = get.comps("Main");
+</code></pre>
+<p>The query results have chain-able commands, as well:</p>
+<pre><code>var redFoldersNamedAssets = get("Assets").folders().filter(1);
+</code></pre>
+<p>The children() method returns all objects contained within a selection.</p>
+<pre><code>var textLayersInCompsNamedMain = get.comps("Main").children(TextLayer);
+</code></pre>
+<p>Functions can also be used as selectors:</p>
+<pre><code>var guideLayers = get.layers(lay =&gt; lay.guideLayer);
+var longRedComps = get.comps(c =&gt; c.duration &gt; 60 &amp;&amp; c.label == 1);
+
+//all layers in compositions in folders with more than five items
+//that have inpoints close to the beginning of the timeline.
+var sel = get.folders(fold =&gt; fold.numItems &gt; 5)
+                    .children(CompItem)
+                    .children(lay =&gt; lay.inPoint &lt; 0.5);
+</code></pre>
+<h3 id="user-content-working-with-selections" class="deep-link"><a href="#working-with-selections">Working with Selections</a></h3>
+<p>Selections can be unboxed, to get an array of the elements inside:</p>
+<pre><code>var gotComps = get.comps("Main");
+var comps = gotComps.selection(); //all elements
+var comp = gotComps.selection(0);//first element in selection
+</code></pre>
+<p>There are also methods on a queryResult that can be used on the selections:</p>
+<pre><code>//.each iterates through every item in the selection
+get.comps("Main").each(c =&gt; c.comment = "Approved");
+
+//.set sets each item in a selection to the given value, if possible
+get.layers(1).set("locked", true);
+
+//.set can also take a function that returns a value
+get(CompItem, AVLayer)
+    .set("width", i =&gt; i.width * 2)
+    .set("height", i =&gt; i.height * 2);
+
+//.call looks for a matching method name, and calls it with any provided arguments
+get.comps().call("setProxyToNone");
+</code></pre>
+<hr>
+<h1 id="user-content-version-040" class="deep-link"><a href="#version-040">Version 0.4.0</a></h1>
+<p>Windows support has been added, but hasn't been tested rigorously. 
+Input about broken/undocumented functionality is highly welcome, 
+especially from windows users.</p>
+
+  </div>
+
+</div>
+
+<div class="sidebar">
+
+
+    <div class="autoselect-wrapper npm-install icon-download">
+      <input value="npm install after-effects" readonly="readonly" type="text">
+      <p><a href="https://www.npmjs.com/package/after-effects/tutorial">how? learn more</a></p>
+    </div>
+
+  <ul class="box">
+
+      <li class="last-publisher">
+          <a href="https://www.npmjs.com/%7Ebenzed">
+            <img src="after-effects_dosyalar/8385ae9dc37d85be8a9bd01afceb6771.png" alt="benzed">
+            <span>benzed</span>
+          </a>
+          published
+          <span data-date="2016-07-27T16:30:44.536Z" data-date-format="relative">3 weeks ago</span>
+      </li>
+
+    <li>
+      <strong>0.4.9</strong>
+      is the latest
+        of 31 releases
+    </li>
+
+      <li>
+        <a href="https://github.com/BenGaumond/after-effects">github.com/BenGaumond/after-effects</a>
+      </li>
+
+
+      <li>
+          <a href="http://spdx.org/licenses/ISC">ISC</a>
+          <img class="osi" alt="Licensed on OSI-approved terms" src="after-effects_dosyalar/osi.svg">®
+      </li>
+
+  </ul>
+
+    <h3 title="collaborators">
+      <a href="https://www.npmjs.com/package/after-effects/access">Collaborators</a>
+    </h3>
+
+    <ul class="humans collaborators">
+        <li>
+            <a original-title="benzed" href="https://www.npmjs.com/%7Ebenzed" rel="tipsy">
+                <img src="after-effects_dosyalar/8385ae9dc37d85be8a9bd01afceb6771.png" alt="benzed">
+            </a>
+        </li>
+
+
+    </ul>
+
+    <h3>Stats</h3>
+    <ul class="box">
+
+        <li>
+          <strong class="pretty-number daily-downloads">68</strong>
+          downloads in the last day
+        </li>
+        <li>
+          <strong class="pretty-number weekly-downloads">151</strong>
+          downloads in the last week
+        </li>
+        <li>
+          <strong class="pretty-number monthly-downloads">810</strong>
+          downloads in the last month
+        </li>
+
+        <li id="issues" data-ghapi="https://api.github.com/repos/BenGaumond/after-effects">
+          <span style="display: none;" class="original">Have an issue? <a href="https://github.com/BenGaumond/after-effects/issues">No open issues</a></span>
+            <span class="enhanced" style="">
+              <a href="https://github.com/BenGaumond/after-effects/issues">No open issues</a> on GitHub
+            </span>
+        </li>
+
+        <li id="pull_requests" style="">
+          <a href="https://github.com/BenGaumond/after-effects/pulls">One open pull request</a> on GitHub
+        </li>
+
+    </ul>
+
+        <h3>Try it out</h3>
+        <ul class="box">
+          <li class="tonicdev"><a href="https://tonicdev.com/npm/after-effects" target="_blank">Test after-effects in your browser.</a></li>
+        </ul>
+
+
+  <h3>Keywords</h3>
+  <p class="list-of-links">
+        <a href="https://www.npmjs.com/browse/keyword/effects">effects</a>, 
+        <a href="https://www.npmjs.com/browse/keyword/after">after</a>
+  </p>
+
+  <h3>Dependencies (9)</h3>
+  <p class="list-of-links">
+          <a href="https://www.npmjs.com/package/uuid">uuid</a>,
+          <a href="https://www.npmjs.com/package/uglify-js">uglify-js</a>,
+          <a href="https://www.npmjs.com/package/jsesc">jsesc</a>,
+          <a href="https://www.npmjs.com/package/is-explicit">is-explicit</a>,
+          <a href="https://www.npmjs.com/package/babel-preset-es2015">babel-preset-es2015</a>,
+          <a href="https://www.npmjs.com/package/babel-plugin-transform-es5-property-mutators">babel-plugin-transform-es5-property-mutators</a>,
+          <a href="https://www.npmjs.com/package/babel-plugin-transform-es3-property-literals">babel-plugin-transform-es3-property-literals</a>,
+          <a href="https://www.npmjs.com/package/babel-plugin-transform-es3-member-expression-literals">babel-plugin-transform-es3-member-expression-literals</a>,
+                <a href="https://www.npmjs.com/package/babel-core">babel-core</a>
+  </p>
+
+    <h3><a href="https://www.npmjs.com/browse/depended/after-effects">Dependents</a></h3>
+    <p class="list-of-links dependents">
+          <a href="https://www.npmjs.com/package/ae-to-json-cli">ae-to-json-cli</a>    </p>
+
+  <script type="application/ld+json">
+    {
+      "@context": "http://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "after-effects",
+      "description": "Send instructions to the After Effects scripting environment from node.js.",
+      "url": "https://www.npmjs.com/package/after-effects",
+      "keywords": "effects,after",
+      "applicationCategory": "DeveloperApplication",
+      "offers": {
+         "@type": "Offer",
+         "price": "0.00"
+      }
+    }
+  </script>
+
+    <div class="hiring-container" data-template="sidebar"><div class="ad">
+  <p>
+    <a href="https://angel.co/edyn/jobs" title="Edyn">Edyn</a> is hiring.
+    <a class="quiet" href="https://www.npmjs.com/whoshiring">View more…</a>
+  </p>
+</div></div>
+</div>
+
+
+    </div>
+
+  <footer class="pane bg-npm-navy-1">
+  
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6 col-md-offset-3">
+          <h3 class="h4 type-npm-pastel-3">You Need Help</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://docs.npmjs.com/">Documentation</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/support">Support / Contact Us</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="http://status.npmjs.org/">Registry Status</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm/www/issues">Website Issues</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm/npm/issues">CLI Issues</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/security">Security</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="h4 type-npm-pastel-3">About npm</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/about">About npm, Inc</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/jobs">Jobs</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/npm-weekly">npm Weekly</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="http://blog.npmjs.org/">Blog</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://twitter.com/npmjs">Twitter</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://github.com/npm">GitHub</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-6 col-md-offset-1">
+          <h3 class="h4 type-npm-pastel-3">Legal Stuff</h3>
+          <hr class="divider-1">
+          <ul class="list-unstyled h6 em-default">
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/terms">Terms of Use</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/conduct">Code of Conduct</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/disputes">Package Name Disputes</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/privacy">Privacy Policy</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/receiving-reports">Reporting Abuse</a></li>
+            <li class="pbl"><a class="type-neutral-11" href="https://www.npmjs.com/policies/">Other policies</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="txt-c container">
+      <a class="npm-loves-you type-neutral-11" href="https://www.npmjs.com/">
+        npm loves you
+      </a>
+    </div>
+  </footer>
+
+  <script defer="defer" src="after-effects_dosyalar/vendor.js"></script>
+  <script defer="defer" async="" src="after-effects_dosyalar/3318080746.js"></script>
+  <script defer="defer" async="" src="after-effects_dosyalar/elqCfg.js"></script><!-- Eloqua -->
+
+
+
+
+<div class="drop-down-menu-overlay" data-drop-down-menu="product-navigation"></div><div style="position: absolute; display: none; max-height: 400px; z-index: 9999; top: 103.7px; left: 20px; width: 482px;" class="autocomplete-container"><div style="position: absolute; display: none; max-height: 400px; z-index: 9999;" class="autocomplete-suggestions"></div></div></body></html>
+<!-- pid&#x3D;9593 78189d09b8ad2db9599f94e9cca29f24830d7e54 https://www.npmjs.com www-13-west.internal.npmjs.com  -->
